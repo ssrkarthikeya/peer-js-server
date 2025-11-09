@@ -1,0 +1,20 @@
+{
+  "name": "peer-js-server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "full-dev": "concurrently \"npm run start --prefix server\" \"npm run dev\"",
+    "compile": "vite build",
+    "preview": "vite preview",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "peerjs": "^1.5.5"
+  }
+}
